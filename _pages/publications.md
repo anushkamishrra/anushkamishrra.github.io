@@ -20,7 +20,7 @@ author_profile: true
 {% endfor %}
 
 
-<h2>Conference Papers</h2>
+<h2>Conference Presentations</h2>
 -----
 {% for post in site.publications reversed %}
   {% if post.pubtype == 'conference' %}
@@ -28,8 +28,6 @@ author_profile: true
   {% endif %}
 {% endfor %}
 
-<h2>Abstracts</h2>
------
 {% for post in site.publications reversed %}
   {% if post.pubtype == 'abstract' %}
       {% include archive-single.html %}

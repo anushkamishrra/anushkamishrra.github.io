@@ -7,8 +7,8 @@ import os
 import re
 import copy
 
-myname = 'Satrajit Chakrabarty'
-joint_first_authors = ['baheti2021brain'] # specify bib_ids where I am joint first author
+myname = 'Anushka Mishrra'
+joint_first_authors = []
 
 html_escape_table = {
     "&": "&amp;",
