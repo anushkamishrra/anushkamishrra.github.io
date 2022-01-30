@@ -6,13 +6,12 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  For most recent publications, please check <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.
+  For most recent publications, please check <a href="{{ site.author.googlescholar }}" target="_blank"> my Google Scholar profile</a>.
 {% endif %}
 
 {% include base_path %}
 
-<h2>Journal Articles</h2>
------
+<h2 class="archive__subtitle">Journal Articles</h2>
 {% for post in site.publications reversed %}
   {% if post.pubtype == 'journal' %}
       {% include archive-single.html %}
@@ -20,8 +19,7 @@ author_profile: true
 {% endfor %}
 
 
-<h2>Conference Presentations</h2>
------
+<h2 class="archive__subtitle">Conference Presentations</h2>
 {% for post in site.publications reversed %}
   {% if post.pubtype == 'conference' %}
       {% include archive-single.html %}

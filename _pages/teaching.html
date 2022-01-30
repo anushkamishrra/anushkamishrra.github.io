@@ -1,5 +1,4 @@
 ---
-layout: archive
 title: "Teaching"
 permalink: /teaching/
 author_profile: true
@@ -7,6 +6,16 @@ author_profile: true
 
 {% include base_path %}
 
+<h2 class="archive__subtitle">Courses Assisted</h2>
+{% for post in site.teaching %}
+  {% if post.type == 'TA' %}
+  {% include archive-single-teaching.html %}
+  {% endif %}
+{% endfor %}
+
+<h2 class="archive__subtitle">Students Mentored</h2>
 {% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+  {% if post.type == 'mentor' %}
+  {% include archive-single-teaching.html %}
+  {% endif %}
 {% endfor %}

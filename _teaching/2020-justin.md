@@ -1,11 +1,11 @@
 ---
-title: "Teaching experience 1"
+title: "mentorlist"
 collection: teaching
-excerpt_txt: "SP 2021 E44 EECE 533 Physical and Chemical Processes for Water Treatment"
-type: "TA"
-permalink: /teaching/2014-spring-teaching-1
+excerpt_txt: "05/2020 - 08/2020 Justin Guilak (Rice University)"
+type: "mentor"
+permalink: /teaching/2020-justin
 venue: "Washington University in St. Louis, EECE"
-date: 2014-01-01
+date: 2020-05-01
 location: "St. Louis, US"
 ---
 This is a description of a teaching experience. You can use markdown like any other post.

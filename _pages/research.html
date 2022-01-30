@@ -1,0 +1,33 @@
+---
+layout: archive
+title: "Research"
+permalink: /research/
+author_profile: true
+---
+
+{% include base_path %}
+
+<h2 class="archive__subtitle">Doctoral Research</h2>
+<br/>
+<img src='/images/doctoralwhole.png' width='1000' height='600'>
+{% for post in site.research %}
+  {% if post.project_type == 'phd' %}
+  {% include archive-single-research.html %}
+  {% endif %}
+{% endfor %}
+
+<h2 class="archive__subtitle">Collaborative Research</h2>
+
+{% for post in site.research %}
+  {% if post.project_type == 'collab' %}
+  {% include archive-single-research.html %}
+  {% endif %}
+{% endfor %}
+
+<h2 class="archive__subtitle">Undergraduate Research</h2>
+
+{% for post in site.research %}
+  {% if post.project_type == 'ug' %}
+  {% include archive-single-research.html %}
+  {% endif %}
+{% endfor %}

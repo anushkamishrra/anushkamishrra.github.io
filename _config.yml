@@ -9,7 +9,7 @@
 github: [metadata]
 livereload: false     # You no longer need to include --livereload
 locale                   : "en-US"
-title                    : "Anushka Mishrra"
+title                    : "Bio"
 title_separator          : "-"
 name                     : &name "Anushka Mishrra"
 description              : &description "personal description"
@@ -183,7 +183,7 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  research:
     output: true
     permalink: /:collection/:path/
   talks:
@@ -232,7 +232,7 @@ defaults:
   # _portfolio
   - scope:
       path: ""
-      type: portfolio
+      type: research
     values:
       layout: single
       author_profile: true
